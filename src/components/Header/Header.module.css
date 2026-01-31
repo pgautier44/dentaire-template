@@ -1,0 +1,170 @@
+.header {
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+/* ========================= */
+/* PARTIE HAUTE (BLEUE)      */
+/* ========================= */
+
+.headerTop {
+  background-color: #305d85;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logoBlock img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.logoTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.3rem;
+}
+
+.logoSubtitle {
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+
+  display: inline-flex;    
+  align-items: center;
+  gap: 0.6rem;               
+}
+
+/* traits */
+.logoSubtitle::before,
+.logoSubtitle::after {
+  content: "";
+  display: block;
+  width: 24px;        /* longueur du trait */
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+/* ========================= */
+/* NAVIGATION                */
+/* ========================= */
+
+.headerNav {
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+}
+
+.navList {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  gap: 1.5rem;
+}
+
+.navList li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Séparateur losange sauf après le dernier élément */
+.navList li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #305d85; /* même couleur que le bouton */
+  transform: rotate(45deg);
+  margin-left: 1rem;
+}
+
+/* Liens de nav classiques */
+.navList li a  {
+  text-decoration: none;
+  color: #305d85; /* couleur bleu foncé */
+  font-weight: 540; /* gras */
+  font-size: 1.10rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0;
+  transition: color 0.2s ease;
+}
+
+.navList li a:hover {
+  color: #0b5ea8;
+}
+
+/* Ajouter un peu de marge à gauche pour séparer du dernier losange */
+.navList li:last-child .navButton {
+  margin-left: 1rem; 
+}
+
+.navButton {
+  display: inline-flex;           /* important pour centrer le texte */
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;         /* padding compté correctement */
+  background-color: #305d85;
+  color: #ffffff !important;
+  padding: 0.8rem 1.5rem !important;           /* espace vertical | horizontal */
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  white-space: nowrap;            /* empêche le texte de passer à la ligne */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #234765;
+  transform: translateY(-1px);
+}
+
+/* ========================= */
+/* RESPONSIVE                */
+/* ========================= */
+@media (max-width: 768px) {
+  .navList {
+    gap: 0.8rem;
+    height: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navList li a {
+    font-size: 0.8rem;
+  }
+
+  .navButton {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* on peut cacher le losange sur mobile si besoin */
+  .navList li:not(:last-child)::after {
+    display: none;
+  }
+}
