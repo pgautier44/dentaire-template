@@ -1,0 +1,58 @@
+.traitementItem {
+  text-align: center;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+/* Cercle icône */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+
+  border-radius: 50%;
+  border: 2px solid #7faebe;
+}
+
+/* Icône SVG */
+.icon svg {
+  width: 42px;
+  height: 42px;
+
+  display: block;       /* évite les espaces par défaut inline */
+  margin: auto;         /* centre dans le cercle */
+
+  color: #7faebe;
+  overflow: visible;
+}
+
+/* Bloc texte */
+.textBlock {
+  padding: 24px;
+  background: #f4f4f4;
+  border-radius: 6px;
+
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre */
+.textBlock h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #7faebe;
+}
+
+/* Texte */
+.textBlock p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+}

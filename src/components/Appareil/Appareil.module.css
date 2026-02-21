@@ -1,0 +1,80 @@
+.appareil {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+
+/* Bandeau titre */
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  background: #4E6670;
+  padding: 18px 80px;
+  margin: 40px 0;
+}
+
+.title h2 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Conteneur des membres */
+.typesAppareils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* espace raisonnable */
+  flex-wrap: nowrap; /* interdit le retour à la ligne */
+}
+
+/* Cercle photo */
+.typesAppareil {
+  width: clamp(280px, 12vw, 240px);
+  height: clamp(280px, 12vw, 240px);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  position: relative;
+  cursor: pointer;
+}
+
+/* Image */
+.typesAppareil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(93, 123, 146, 0.65); /* voile bleu */
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Apparition */
+.typesAppareil:hover .overlay {
+  opacity: 1;
+}

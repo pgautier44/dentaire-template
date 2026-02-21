@@ -109,6 +109,7 @@
   text-transform: uppercase;
   padding: 0.3rem 0;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .navList li a:hover {

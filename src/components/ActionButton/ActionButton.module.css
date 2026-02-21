@@ -1,0 +1,44 @@
+.action {
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: transform 0.2s ease;
+}
+
+.action:hover {
+  transform: translateY(-3px);
+}
+
+/* Rond blanc */
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.icon svg {
+  width: 40px;
+  height: 40px;
+  fill: #7faebe;
+}
+
+/* Texte sous le rond */
+.label {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #7A7A7A;
+}

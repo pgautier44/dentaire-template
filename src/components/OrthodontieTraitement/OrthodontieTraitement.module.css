@@ -1,0 +1,54 @@
+.traitement {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Titre */
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  background: #7C9BA8;
+  padding: 18px 80px;
+}
+
+.title h2 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Contenu structuré */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  flex-wrap: nowrap; /* empêche retour ligne */
+  padding: 0 40px;  
+}
+
+/* Étape du traitement */
+.step h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #305d85;
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.icon svg {
+  width: 42px;
+  height: 42px;
+  color: #305d85;
+}

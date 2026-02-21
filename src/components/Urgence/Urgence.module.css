@@ -1,0 +1,91 @@
+/* SECTION */
+.urgences {
+  padding: 30px 20px;
+  background: #f7eef2;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+
+/* TITRE */
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  background: #861550;
+  padding: 20px 70px;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  color: white;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 200px; /* plus d'espace */
+}
+
+/* ICONE */
+.iconWrapper {
+  flex-shrink: 0;
+  width: 170px;
+  height: 170px;
+}
+
+.iconWrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Cercle contour uniquement */
+.circle {
+  fill: none;
+  stroke: #861550;
+  stroke-width: 6;
+}
+
+/* Croix pleine */
+.cross {
+  fill: #861550;
+}
+
+/* TEXTE */
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 19px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+  color: #2c2c2c;
+
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .iconWrapper {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,38 @@
+.ortho {
+  width: 100vw; /* plutôt que 100% */
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  margin-left: calc(50% - 50vw); /* recentre exactement */
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  background: #7CA194;
+  padding: 18px 80px;
+}
+
+.title h2 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Texte clair et élégant */
+.textContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8;
+  color: #444;
+}
+
+.textContainer p {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
