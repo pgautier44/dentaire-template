@@ -1,4 +1,6 @@
 import styles from "./Team.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Team() {
   return (
@@ -11,21 +13,31 @@ export default function Team() {
       </div>
 
       <div className={styles.members}>
-        <div className={styles.member}>
-          <img src="/images/placeholder.jpg" alt="Praticien" />
+        <Link href="team/martin" className={styles.member}>
+          <Image
+            src="/images/placeholder.jpg"
+            alt="Dr Martin"
+            width={400}
+            height={500}
+          />
           <div className={styles.overlay}>
             <h3>Dr Martin</h3>
             <p>Orthodontiste</p>
           </div>
-        </div>
+        </Link>
 
-        <div className={styles.member}>
-          <img src="/images/placeholder.jpg" alt="Assistante" />
+        <Link href="team/julie" className={styles.member}>
+          <Image
+            src="/images/placeholder.jpg"
+            alt="Julie Dupont"
+            width={400}
+            height={500}
+          />
           <div className={styles.overlay}>
             <h3>Julie Dupont</h3>
             <p>Assistante dentaire</p>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

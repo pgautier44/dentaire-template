@@ -27,16 +27,16 @@ export default function Header() {
       {/* Navigation */}
       <nav className={styles.headerNav}>
         <ul className={styles.navList}>
-          <li><a href="#cabinet">Le cabinet</a></li>
-          <li><a href="#team">L’équipe</a></li>
-          <li><a href="#orthodontie">L'Orthodontie</a></li>
-          <li><a href="#traitement">Traitements</a></li>
-          <li><a href="#appareils">Appareils</a></li>
-          <li><a href="#urgences">Urgences</a></li>
-          <li><a href="#contact">Contact</a></li>
-          {/* Bouton prise de rendez-vous */}
+          <li><Link href="/#cabinet">Le cabinet</Link></li>
+          <li><Link href="/#team">L’équipe</Link></li>
+          <li><Link href="/#orthodontie">L'Orthodontie</Link></li>
+          <li><Link href="/#traitement">Traitements</Link></li>
+          <li><Link href="/#appareils">Appareils</Link></li>
+          <li><Link href="/#urgences">Urgences</Link></li>
+          <li><Link href="/#contact">Contact</Link></li>
+          
           <li>
-            <Link href="#rendezvous" className={styles.navButton}>
+            <Link href="/#rendezvous" className={styles.navButton}>
               Prendre rendez-vous
             </Link>
           </li>

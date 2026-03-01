@@ -5,19 +5,19 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <Link href="/mentions-legales" className={styles.link}>
+        <Link href="/mentionsLegales" className={styles.link}>
           Mentions légales
         </Link>
 
         <span className={styles.separator}>|</span>
 
-        <Link href="/cgu" className={styles.link}>
+        <Link href="/conditions-utilisation" className={styles.link}>
           Conditions Générales d'Utilisation
         </Link>
 
         <span className={styles.separator}>|</span>
 
-        <Link href="/cookies" className={styles.link}>
+        <Link href="/politique-cookies" className={styles.link}>
           Politique de gestion des cookies
         </Link>
       </div>
